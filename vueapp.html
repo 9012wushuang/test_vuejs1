@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<body>
+<div id="app">
+    {{ message }}
+    <input type="text" value="" name="" v-model="message"/>
+    <ul>
+        <li v-for="person in persons">
+            {{ person.name }} loves {{person.love}}
+        </li>
+
+    </ul>
+    <button v-on:click="changeContent('bifenghui')">Click on!</button>
+
+</div>
+</body>
+<script type="text/javascript" src="vueapp.js"></script>
+</html>
+
